@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com" />
   <remote  name="github"
            fetch="https://github.com/pine64-android" />
-  <default revision="refs/tags/android-5.1.1_r13"
+  <default revision="refs/tags/android-5.1.1_r38"
            remote="aosp"
            sync-j="4" />
 
