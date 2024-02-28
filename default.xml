@@ -3,27 +3,29 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
-  <remote  name="github"
+  <remote  name="pine64-android"
            fetch="https://github.com/pine64-android" />
+  <remote  name="xunmod"
+           fetch="https://github.com/xunmod" />
   <default revision="refs/tags/android-5.1.1_r38"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="build" remote="github" revision="a64" groups="pdk,tradefed" >
+  <project path="build" name="build" remote="pine64-android" revision="a64" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="art" remote="github" revision="a64" groups="pdk" />
-  <project path="bionic" name="bionic" remote="github" revision="a64" groups="pdk" />
+  <project path="art" name="art" remote="pine64-android" revision="a64" groups="pdk" />
+  <project path="bionic" name="bionic" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="bootable-recovery" remote="github" revision="a64" groups="pdk" />
-  <project path="cts" name="cts" remote="github" revision="a64" groups="cts,pdk-cw-fs" />
+  <project path="bootable/recovery" name="bootable-recovery" remote="pine64-android" revision="a64" groups="pdk" />
+  <project path="cts" name="cts" remote="pine64-android" revision="a64" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="development" remote="github" revision="a64" groups="pdk-cw-fs" />
+  <project path="development" name="development" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" />
@@ -58,7 +60,7 @@
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
-  <project path="device/softwinner" name="device-softwinner" remote="github" revision="a64" groups="pdk" />
+  <project path="device/softwinner" name="device-softwinner" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -71,7 +73,7 @@
   <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project path="external/bluetooth/bluedroid" name="external-bluetooth-bluedroid" remote="github" revision="a64" groups="pdk" />
+  <project path="external/bluetooth/bluedroid" name="external-bluetooth-bluedroid" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -171,9 +173,9 @@
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs" />
   <project path="external/jsr305" name="platform/external/jsr305" groups="pdk-cw-fs,tradefed" />
-  <project path="external/junit" name="external-junit" remote="github" revision="a64" groups="pdk-cw-fs,tradefed" />
+  <project path="external/junit" name="external-junit" remote="pine64-android" revision="a64" groups="pdk-cw-fs,tradefed" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs" />
-  <project path="external/kernel-headers" name="external-kernel-headers" remote="github" revision="a64" groups="pdk-cw-fs" />
+  <project path="external/kernel-headers" name="external-kernel-headers" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
@@ -242,7 +244,7 @@
   <project path="external/pcre" name="platform/external/pcre" groups="pdk-cw-fs" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk-cw-fs" />
   <project path="external/pixman" name="platform/external/pixman" groups="pdk-cw-fs" />
-  <project path="external/ppp" name="external-ppp" remote="github" revision="a64" groups="pdk-cw-fs" />
+  <project path="external/ppp" name="external-ppp" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java,tradefed" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
   <project path="external/qemu" name="platform/external/qemu" groups="pdk-cw-fs" />
@@ -252,9 +254,9 @@
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project path="external/sepolicy" name="external-sepolicy" remote="github" revision="a64" groups="pdk" />
+  <project path="external/sepolicy" name="external-sepolicy" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project path="external/skia" name="external-skia" remote="github" revision="a64" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/skia" name="external-skia" remote="pine64-android" revision="a64" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -269,7 +271,7 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs" />
-  <project path="external/tinyalsa" name="external-tinyalsa" remote="github" revision="a64" groups="pdk" />
+  <project path="external/tinyalsa" name="external-tinyalsa" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -278,15 +280,15 @@
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="external-wpa_supplicant_8" remote="github" revision="a64" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="external-wpa_supplicant_8" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="frameworks-av" remote="github" revision="a64" groups="pdk" />
-  <project path="frameworks/base" name="frameworks-base" remote="github" revision="a64" groups="pdk-cw-fs" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="xunmod" revision="lollipop" groups="pdk" />
+  <project path="frameworks/base" name="frameworks-base" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -295,7 +297,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="frameworks-native" remote="github" revision="a64" groups="pdk" />
+  <project path="frameworks/native" name="frameworks-native" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -309,10 +311,10 @@
   <project path="frameworks/opt/net/ims" name="platform/frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
   <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" />
-  <project path="frameworks/opt/net/ethernet" name="frameworks-opt-net-ethernet" remote="github" revision="a64" />
+  <project path="frameworks/opt/net/ethernet" name="frameworks-opt-net-ethernet" remote="pine64-android" revision="a64" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="frameworks-opt-telephony" remote="github" revision="a64" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="frameworks-opt-telephony" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -320,11 +322,11 @@
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" />
-  <project path="frameworks/wilhelm" name="frameworks-wilhelm" remote="github" revision="a64" groups="pdk-cw-fs" />
+  <project path="frameworks/wilhelm" name="frameworks-wilhelm" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/aw" name="hardware-aw" remote="github" revision="a64" groups="pdk" />
-  <project path="hardware/broadcom/libbt" name="hardware-broadcom-libbt" remote="github" revision="a64" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="hardware-broadcom-wlan" remote="github" revision="a64" groups="broadcom_wlan" />
+  <project path="hardware/aw" name="hardware-aw" remote="pine64-android" revision="a64" groups="pdk" />
+  <project path="hardware/broadcom/libbt" name="hardware-broadcom-libbt" remote="pine64-android" revision="a64" groups="pdk" />
+  <project path="hardware/broadcom/wlan" name="hardware-broadcom-wlan" remote="pine64-android" revision="a64" groups="broadcom_wlan" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
@@ -338,10 +340,10 @@
   <project path="hardware/intel/img/hwcomposer" name="platform/hardware/intel/img/hwcomposer" groups="intel" />
   <project path="hardware/intel/img/libdrm" name="platform/hardware/intel/img/libdrm" groups="intel" />
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
-  <project path="hardware/intel/img/psb_video" name="hardware-intel-img-psb_video" remote="github" revision="a64" groups="intel" />
+  <project path="hardware/intel/img/psb_video" name="hardware-intel-img-psb_video" remote="pine64-android" revision="a64" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="hardware-libhardware" remote="github" revision="a64" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="github" revision="a64" groups="pdk" />
+  <project path="hardware/libhardware" name="hardware-libhardware" remote="pine64-android" revision="a64" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
@@ -358,33 +360,33 @@
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/realtek" name="hardware-realtek" remote="github" revision="a64" groups="pdk" />
-  <project path="hardware/ril" name="hardware-ril" remote="github" revision="a64" groups="pdk" />
+  <project path="hardware/realtek" name="hardware-realtek" remote="pine64-android" revision="a64" groups="pdk" />
+  <project path="hardware/ril" name="hardware-ril" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
-  <project path="libcore" name="libcore" remote="github" revision="a64" groups="pdk" />
+  <project path="libcore" name="libcore" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="packages-apps-Bluetooth" remote="github" revision="a64" groups="pdk-cw-fs" />
-  <project path="packages/apps/Browser" name="packages-apps-Browser" remote="github" revision="a64" />
-  <project path="packages/apps/Calculator" name="packages-apps-Calculator" remote="github" revision="a64" />
+  <project path="packages/apps/Bluetooth" name="packages-apps-Bluetooth" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
+  <project path="packages/apps/Browser" name="packages-apps-Browser" remote="pine64-android" revision="a64" />
+  <project path="packages/apps/Calculator" name="packages-apps-Calculator" remote="pine64-android" revision="a64" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
-  <project path="packages/apps/Camera2" name="packages-apps-Camera2" remote="github" revision="a64" />
+  <project path="packages/apps/Camera2" name="packages-apps-Camera2" remote="pine64-android" revision="a64" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
-  <project path="packages/apps/DeskClock" name="packages-apps-DeskClock" remote="github" revision="a64" />
+  <project path="packages/apps/DeskClock" name="packages-apps-DeskClock" remote="pine64-android" revision="a64" />
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
-  <project path="packages/apps/Email" name="packages-apps-Email" remote="github" revision="a64" />
+  <project path="packages/apps/Email" name="packages-apps-Email" remote="pine64-android" revision="a64" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
-  <project path="packages/apps/Gallery2" name="packages-apps-Gallery2" remote="github" revision="a64" />
+  <project path="packages/apps/Gallery2" name="packages-apps-Gallery2" remote="pine64-android" revision="a64" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
@@ -403,7 +405,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="packages-apps-QuickSearchBox" />
-  <project path="packages/apps/Settings" name="packages-apps-Settings" remote="github" revision="a64" />
+  <project path="packages/apps/Settings" name="packages-apps-Settings" remote="pine64-android" revision="a64" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="packages-apps-SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -412,7 +414,7 @@
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" />
-  <project path="packages/apps/UnifiedEmail" name="packages-apps-UnifiedEmail" remote="github" revision="a64" />
+  <project path="packages/apps/UnifiedEmail" name="packages-apps-UnifiedEmail" remote="pine64-android" revision="a64" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
@@ -421,7 +423,7 @@
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" groups="pdk-cw-fs" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs" />
-  <project path="packages/providers/MediaProvider" name="packages-providers-MediaProvider" remote="github" revision="a64" groups="pdk-cw-fs" />
+  <project path="packages/providers/MediaProvider" name="packages-providers-MediaProvider" remote="pine64-android" revision="a64" groups="pdk-cw-fs" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" />
@@ -494,13 +496,13 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="system-core" remote="github" revision="a64" groups="pdk" />
-  <project path="system/extras" name="system-extras" remote="github" revision="a64" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="xunmod" revision="a64" groups="pdk" />
+  <project path="system/extras" name="system-extras" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
-  <project path="system/media" name="system-media" remote="github" revision="a64" groups="pdk" />
+  <project path="system/media" name="system-media" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="system-vold" remote="github" revision="a64" groups="pdk" />
+  <project path="system/vold" name="system-vold" remote="pine64-android" revision="a64" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
