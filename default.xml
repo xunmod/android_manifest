@@ -79,7 +79,7 @@
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="external-chromium_org" remote="github" revision="a64" />
+  <project path="external/chromium_org" name="platform/external/chromium_org" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -388,8 +388,8 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
-  <project path="packages/apps/Launcher2" name="packages-apps-Launcher2" remote="github" revision="a64" />
-  <project path="packages/apps/Launcher3" name="packages-apps-Launcher3" remote="github" revision="a64" />
+  <project path="packages/apps/Launcher2" name="packages-apps-Launcher2" />
+  <project path="packages/apps/Launcher3" name="packages-apps-Launcher3" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
@@ -402,12 +402,12 @@
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/QuickSearchBox" name="packages-apps-QuickSearchBox" remote="github" revision="a64" />
+  <project path="packages/apps/QuickSearchBox" name="packages-apps-QuickSearchBox" />
   <project path="packages/apps/Settings" name="packages-apps-Settings" remote="github" revision="a64" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
-  <project path="packages/apps/SoundRecorder" name="packages-apps-SoundRecorder" remote="github" revision="a64" />
+  <project path="packages/apps/SoundRecorder" name="packages-apps-SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
-  <project path="packages/apps/SpeechRecorder" name="packages-apps-SpeechRecorder" remote="github" revision="a64" />
+  <project path="packages/apps/SpeechRecorder" name="packages-apps-SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" />
